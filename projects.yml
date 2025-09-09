@@ -1,14 +1,6 @@
 projects:
   - name: "n8n"
-    path: "/projet/workflows etc etc "
-    branch: "recette"
+    path: "/projets/n8n/workflows-n8n"
+    branch: "Import-workflows"
     commands:
-      - "echo 'Project1 updated'"
-      - "systemctl restart myservice1"
-
-  - name: "project2"
-    path: "/path/to/project2"
-    branch: "develop"
-    commands:
-      - "echo 'Deploying project2'"
-      - "/path/to/project2/scripts/deploy.sh"
+      - "./refresh-workflows.sh"
